@@ -1,7 +1,10 @@
 .header {
-    background-color: rgb(243, 234, 234);
+    box-shadow: 0 1px 7px rgb(216, 216, 216);
     padding: 22px 0;
-    position: relative;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    background-color: $white;
 
     &__container {
         display: flex;
@@ -104,7 +107,6 @@
 
 @media only screen and (max-width:730px) {
     .header {
-
         &__logo-link {
             position: absolute;
             left: calc(50%);
@@ -117,8 +119,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-color: #000;
-            opacity: 0.75;
+            background-color: #00000080;
             display: none;
         }
 
@@ -148,7 +149,7 @@
             color: $light-grey;
         }
 
-        &__button {
+        &__button-off {
             position: absolute;
             bottom: 0;
             transform: translateY(526px);
