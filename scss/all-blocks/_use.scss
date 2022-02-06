@@ -163,8 +163,9 @@
 // mobile devices -----------------------------------------
 .use{
     @media only screen and (max-width :730px ){
+        overflow-x: hidden;
         margin-bottom: 128px;
-
+        overflow-x: hidden;
         &__container {
             display: flex;
             flex-direction: column-reverse;
