@@ -1,5 +1,6 @@
 .use {
     margin-bottom: 155px;
+    overflow-x: hidden;
 
     &__container {
         display: flex;
@@ -30,10 +31,10 @@
 
     &__right-side {
 
-        background-image: url("./../../images/use-circle.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        object-position: contain;
+        // background-image: url("./../../images/use-circle.svg");
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // object-position: contain;
         position: relative;
 
         &::before{
@@ -75,6 +76,8 @@
     }
 }
 
+
+// tablet devisec --------------------------------------------------------------------
 .use{
     @media only screen and (max-width :1040px ){
         margin-bottom: 128px;
@@ -107,53 +110,6 @@
         &__text {
             margin-bottom: 40px;
         }
-
-
-        // &__right-side {
-
-        //     background-image: url("./../../images/use-circle.svg");
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     object-position: contain;
-        //     position: relative;
-
-        //     &::before{
-        //         content: "";
-        //         display: inline-block;
-        //         position: absolute;
-        //         width: 740px;
-        //         height: 150px;
-        //         background-image: url("./../../images/use-arrow.svg");
-        //         background-repeat: no-repeat;
-        //         background-position: center;
-        //         object-position: contain;
-        //         bottom: 0;
-        //         right: 0;
-        //         transform: translateX(165px);
-        //     }
-
-
-        //     &::after{
-        //         content: "";
-        //         display: none;
-        //         width: 445px;
-        //         height: 445px;
-        //         position: absolute;
-        //         background-image: url("./../../images/use-circle.svg");
-        //         background-repeat: no-repeat;
-        //         background-position: center;
-        //         object-position: contain;
-        //         left: 100%;
-        //         transform: translateX(64px);
-        //         z-index: -1;
-        //     }
-        // }
-
-        // &__img {
-        //     border-radius: 50%;
-        //     max-width: 445px;
-        //     height: auto;
-        // }
     }
 
 }
@@ -202,7 +158,6 @@
             &::before{
                 transform: translateX(58%);
             }
-
 
             &::after{
                 display: none;
